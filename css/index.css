@@ -1,0 +1,108 @@
+#main{
+	background: #F2F2F2;
+}
+.xuan_main{
+	background: url(../images/pic1.png);
+	width: 100%;
+	height: 610px;
+	padding: 10px 0;
+}
+.room{
+	width: 1170px;
+	margin: auto;
+}
+.room_l{
+	height: 560px;
+	
+	float: left;
+	position: relative;
+}
+#aaone{
+	height: 590px;
+	
+}
+#aasmall{
+	position: absolute;
+	left:325px ;
+	top: 305px;
+	
+}
+#tankuang{
+	padding: 40px;position: absolute;left:375px ;top: 255px;background-color: white;border-radius: 10px;
+	display:none;
+}
+#title{
+	text-align: center;font-family: '微软雅黑';font-size: 18px;color: rgb(51,51,51);margin-bottom: 20px;
+}
+.room_r{
+	float: left;
+	width: 180px;
+	height: 590px;
+	margin-left: 9px;
+}
+.room_r img{
+	width: 180px;
+	margin-bottom: 5px;
+	float: left;
+}
+.active{
+	border: 4px solid #ff9830;
+}
+.gameZB{
+	width: 1170px;
+	height: 400px;
+	margin: auto;
+	margin-top: 20px;
+	background: #FFFFFF;
+	padding: 0 5px;
+}
+.gameone{
+	padding: 10px;
+}
+.gameName{
+	height: 70px;
+	border: 1px solid #FFFFFF;
+	position: relative;
+	border-bottom: 1px solid #F1F1F1;
+}
+.gameName img{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top: 10px;
+}
+.gameName h2{
+	margin-left: 15px;
+	padding-left: 45px;
+	margin-top: 10px;	
+
+}
+.gameName div{
+	position: absolute;
+	right: 0;
+	top: 35%;
+	width: 70px;
+
+	font-size: 16px;
+	color:#7d7d7d;
+}
+.zb_img{
+	margin-top: 15px;
+	margin-left: -2px;
+}
+.p_zb{
+	margin-top: 10px;
+	font-size: 20px;
+	color: #333333;
+}
+.zb_name{
+	font-size: 18px;
+	color: #ff9830;
+	margin-top: 4px;
+	position: relative;
+}
+.eyesum{
+	position: absolute;
+	right: 0;
+	top: 0;
+}

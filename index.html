@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+		<title>火豹科技直播-首页</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<script>
+			window.onload=function(){
+				var oDiv=document.getElementById("room_r");
+				var aImg=oDiv.getElementsByTagName('img'); 
+				for(var i=0;i<aImg.length;i++) {
+					aImg[i].index=i;
+					aImg[i].onmouseover=function(){
+						for(var i=0;i<aImg.length;i++){
+							aImg[i].className='';						
+						}
+						this.className='active';				
+					};
+				}
+				
+				//点击直播间
+				var Btn=document.getElementById("aasmall");
+				Btn.onclick=function(){
+					document.getElementById("tankuang").style.display="block";
+				}
+				var okBtn=document.getElementById("btn");
+				okBtn.onclick=function(){
+					document.getElementById("tankuang").style.display="none";
+				}
+			};
+			
+		</script>
+	</head>
+	<body>
+		
+		<header class="home-header">
+	        <div class="header">
+	            <div class="container">
+	                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+	                    <p><img src="images/logo_pc.png" data-id="" style="height: 36px;"></p>
+	                </div>
+	                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 header-right">
+	                    <ul class="nav">
+	                        <li><a href="index.html">首页</a></li>
+	                        <li><a href="about/intrduce.html">关于火豹</a></li>                   
+	                        <li><a href="business/coorperation.html">商务合作</a></li> 
+	                        <li><a href="add/school.html">加入火豹</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </header>
+	    <div id="main">
+	    	<div class="xuan_main">
+	    		<div class="room">
+	    			<div class="room_l">
+	    				<img src="images/a0.png" id="aaone">
+	    				<img src="images/button.png" id="aasmall">
+	    					<!--提示弹框-->
+					    <div id="tankuang">
+							<div id="title">
+								直播间未开通服务
+							</div>
+							<div class="btn btn-warning btn-block" id="btn">ok</div>
+			            </div>
+		    		</div>
+	    		
+	    			<div class="room_r" id="room_r">
+	    				<img src="images/a1.png" width="180px" height="94px" class="active"/>
+	    				
+	    				<img src="images/a2.png" width="180px" height="94px" />
+	    				
+	    				<img src="images/a3.png" width="180px" height="94px" />
+	    			
+	    				<img src="images/a4.png" width="180px" height="94px" />
+	    				
+	    				<img src="images/a5.png" width="180px" height="94px" />
+
+                        <img src="images/a6.png" width="180px" height="94px" />
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="gameZB">
+	    		<div class="gameone">
+	    			<div class="gameName">
+	    				<img src="images/chiji.png" />
+	    				<h2>绝地求生</h2>
+	    				<div>更多...</div>
+	    			</div>
+	    		</div>
+	    		<div class="container">
+		         	<div class="row">
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/3.png"></div>
+		         			<p align="left" class="p_zb">爱玩538水友赛</p>
+		         			<div class="zb_name">
+		         				pigff
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					94.2万
+		         				</div>
+		         			</div>		         			
+		         		</div>
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/2.png"></div>
+		         			<p align="left" class="p_zb">带飞，吃鸡了解一下</p>
+		         			<div class="zb_name">
+		         				高冷丑男暖心囧
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					12.1万
+		         				</div>
+		         			</div>
+		         		</div>
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/1.png"></div>
+		         			<p align="left" class="p_zb">黑暗系少女</p>
+		         			<div class="zb_name">
+		         				人气直播999
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					24.9万
+		         				</div>
+		         			</div>
+		         		</div>
+		         	</div>
+		         </div>
+	    	</div>
+	        
+	        <div class="gameZB">
+	    		<div class="gameone">
+	    			<div class="gameName">
+	    				<img src="images/lol.png" />
+	    				<h2>英雄联盟</h2>
+	    				<div>更多...</div>
+	    			</div>
+	    		</div>
+	    		<div class="container">
+		         	<div class="row">
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/4.png"></div>
+		         			<p align="left" class="p_zb">神超：无线火力我为王</p>
+		         			<div class="zb_name">
+		         				三笠
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					44.2万
+		         				</div>
+		         			</div>		         			
+		         		</div>
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/5.png"></div>
+		         			<p align="left" class="p_zb">【冷爷行妹】回山东了，教乡亲们打游戏</p>
+		         			<div class="zb_name">
+		         				冷爷行妹
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					12.1万
+		         				</div>
+		         			</div>
+		         		</div>
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/6.png"></div>
+		         			<p align="left" class="p_zb">单人影：影流之主峡谷冲冲冲</p>
+		         			<div class="zb_name">
+		         				單人影
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					9万
+		         				</div>
+		         			</div>
+		         		</div>
+		         	</div>
+		         </div>
+	    	</div>
+	    	
+	    	<div class="gameZB">
+	    		<div class="gameone">
+	    			<div class="gameName">
+	    				<img src="images/wangzherongyao.png" />
+	    				<h2>王者荣耀</h2>
+	    				<div>更多...</div>
+	    			</div>
+	    		</div>
+	    		<div class="container">
+		         	<div class="row">
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/7.png"></div>
+		         			<p align="left" class="p_zb">露娜一月无限连</p>
+		         			<div class="zb_name">
+		         				白白白233
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					35.4万
+		         				</div>
+		         			</div>		         			
+		         		</div>
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/8.png"></div>
+		         			<p align="left" class="p_zb">五排一天冲王者</p>
+		         			<div class="zb_name">
+		         				国服第一安琪拉BABY
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					33.2万
+		         				</div>
+		         			</div>
+		         		</div>
+		         		<div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+		         			<div class="zb_img"><img src="images/9.png"></div>
+		         			<p align="left" class="p_zb">无敌输出太乙：怎么都能赢</p>
+		         			<div class="zb_name">
+		         				豆豆、Thomas
+		         				<div class="eyesum">
+		         					<img src="images/eyes.png">
+		         					30.3万
+		         				</div>
+		         			</div>
+		         		</div>
+		         	</div>
+		         </div>
+	    	</div>
+	    </div>
+	       
+		<footer id="footer">
+			<div class="container">	
+				<p>深圳火豹网络科技有限公司 版权所有 &#169; 2014-2016</p>
+			    <p>联系地址：深圳市南山区南山街道登良路26号公园道大厦B座1502室</p>
+			    <p>联系方式：13353776882</p>
+			    <p>联系邮箱：48855784@qq.com</p>
+			    <p>网络文化经营许可证：
+			    <span>粤ICP备16053341号-2</span>
+			    </p>
+			</div>
+		</footer>
+	</body>
+</html>
